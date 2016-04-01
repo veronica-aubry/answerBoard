@@ -1,5 +1,16 @@
-
 <div class="detail">
-{{question-detail question=model destroyQuestion="destroyQuestion"}}
-{{update-question question=model update="update"}}
+
+{{question-detail question=model.question destroyQuestion="destroyQuestion"}}
+{{update-question question=model.question update="update"}}
+
+
+
+{{new-answer saveAnswer="saveAnswer" question=model.question}}
+
+<div class="answer">
+{{#each model.question.answers as |answer|}}
+    {{answer-tile answer=answer}}
+{{/each}}
+</div>
+
 </div>
