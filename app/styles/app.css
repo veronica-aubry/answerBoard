@@ -1,0 +1,13 @@
+.nav {
+  background-color: cornflowerBlue;
+  height: 50px;
+}
+
+.title {
+  font-size: 3em;
+  color: white;
+}
+
+.link {
+  margin-left: 20%;
+}
