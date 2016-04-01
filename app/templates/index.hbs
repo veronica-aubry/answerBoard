@@ -1,11 +1,20 @@
 
-Ask a question, get an answer. We are not responsible.
+<div class="intro container">
+<h3>Ask a question, get an answer. We're not responsible for what happens after that.</h3>
+<br><br>
 
+<div class="questionForm container">
 
+{{new-question save="save"}}
+
+</div>
+
+<div class="questionList">
 <ul>
   {{#each model as |question|}}
      {{question-tile question=question}}
   {{/each}}
 </ul>
 
-{{new-question save="save"}}
+</div>
+</div>

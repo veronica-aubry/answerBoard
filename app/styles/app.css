@@ -1,6 +1,8 @@
 .nav {
-  background-color: cornflowerBlue;
+  background-color: tomato;
   height: 50px;
+  width: 100%;
+  margin-left:0;
 }
 
 .title {
@@ -8,10 +10,39 @@
   color: white;
 }
 
-.link {
-  margin-left: 20%;
+.link a {
+  color:white;
 }
 
 .detail {
   margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.update {
+  margin-top: 20px;
+}
+
+.newAnswer {
+  margin-top: 20px;
+}
+.answer {
+  margin-top: 20px;
+}
+
+.intro {
+  margin-top: 50px;
+}
+
+.questionForm {
+  margin-left: 30%;
+  margin-bottom: 70px;
+}
+
+.questionLink {
+  font-size: 1.5em;
+}
+
+.questionDetail {
+  margin-left: 40px;
 }

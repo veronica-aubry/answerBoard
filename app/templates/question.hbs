@@ -1,13 +1,18 @@
 <div class="detail">
 
 {{question-detail question=model.question destroyQuestion="destroyQuestion"}}
+
+<div class="update container">
 {{update-question question=model.question update="update"}}
+</div>
 
-
-
+<div class="newAnswer container">
 {{new-answer saveAnswer="saveAnswer" question=model.question}}
+</div>
 
-<div class="answer">
+<hr/>
+
+<div class="answer container">
 {{#each model.question.answers as |answer|}}
     {{answer-tile answer=answer}}
 {{/each}}

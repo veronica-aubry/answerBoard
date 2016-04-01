@@ -1,5 +1,12 @@
+
+<div class="questionContent container">
 <h2>{{question.title}}</h2>
 <p>Asked by {{question.author}}</p>
-<p>{{question.text}}</p>
+<br>
+<span class="questionDetail">{{question.text}}</span>
+<br><br>
 
-<button {{action 'delete' question}}>Delete</button>
+<hr/>
+
+<button {{action 'delete' question}} class="btn btn-danger">Delete</button>
+</div>
