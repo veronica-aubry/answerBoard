@@ -1,2 +1,9 @@
 <p><b>{{answer.author}}</b><br>
+{{#star-rating item=answer rating=answer.rating on-click=(action "updateRating") as |stars set|}}
+  {{#each stars as |star|}}
+    <a {{action set star.rating}}>
+      {{#if star.full}}*{{else}}_{{/if}}
+    </a>
+  {{/each}}
+{{/star-rating}}
 <span class="answer">{{answer.body}}</span></p>

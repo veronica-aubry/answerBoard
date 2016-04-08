@@ -14,7 +14,7 @@
 
 <div class="answer container">
 {{#each model.question.answers as |answer|}}
-    {{answer-tile answer=answer}}
+    {{answer-tile answer=answer updateRating="updateRating"}}
 {{/each}}
 </div>
 
