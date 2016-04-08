@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 
   actions: {
     updateRating(params) {
-      this.sendAction('updateRating', params)
+      this.sendAction('updateRating', params);
     },
     addToFavorites(answer){
       this.get('favorites').add(answer);

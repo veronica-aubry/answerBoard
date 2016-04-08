@@ -1,9 +1,8 @@
+<div class="favorites container">
+
 <h3> Your Favorites </h3>
 <br>
 
-{{#each favorites.answers as |answers|}}
-  <p><i>{{answer.question.title}}</i></p>
-  <p>{{answer.body}}</p>
-  <br>
-  <hr/>
-{{/each}}
+{{favorites-display}}
+
+</div>

@@ -46,3 +46,7 @@
 .questionDetail {
   margin-left: 40px;
 }
+
+.glyphicon {
+  cursor:pointer;
+}

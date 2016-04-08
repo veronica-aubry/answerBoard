@@ -8,8 +8,8 @@
         </div>
 
         <div class="form-group">
-          <label for="body">Answer</label>
-          {{input value=body id="body"}}
+          <label for="body">Answer</label><br>
+          {{textarea value=body id="body"}}
         </div>
         <button {{action 'saveAnswer' answer}}>Save</button>
       </form>
