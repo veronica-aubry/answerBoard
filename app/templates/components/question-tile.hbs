@@ -1,1 +1,10 @@
-<div class="questionLink"><li>{{#link-to 'question' question.id}}"{{question.title}}" by {{question.author}}{{/link-to}}<br>{{answerLength}}</li></div>
+<div class="questionLink">
+  <li>
+    {{unanswered question}}
+    {{#link-to 'question' question.id}}
+      "{{question.title}}" by {{question.author}}
+    {{/link-to}}
+    <br>
+    {{answerLength}}
+  </li>
+</div>

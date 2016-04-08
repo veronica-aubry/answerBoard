@@ -2,8 +2,13 @@
 {{#star-rating item=answer rating=answer.rating on-click=(action "updateRating") as |stars set|}}
   {{#each stars as |star|}}
     <a {{action set star.rating}}>
-      {{#if star.full}}*{{else}}_{{/if}}
+      {{#if star.full}}
+        <span class="glyphicon glyphicon-star"></span>
+      {{else}}
+        <span class="glyphicon glyphicon-star-empty"></span>
+      {{/if}}
     </a>
   {{/each}}
+  <span {{action 'addToFavorites' answer}} class="glyphicon glyphicon-heart"></span>
 {{/star-rating}}
 <span class="answer">{{answer.body}}</span></p>
