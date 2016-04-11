@@ -1,6 +1,6 @@
 # WahooAnswers
 
-  A web app for users to post questions and answers, using EmberJS
+A web app for users to post questions and answers, using Ember.js and a FireBase database. Assignment goals were to implement a service, a custom helper, and a computed property, with components allowing for questions to be edited and deleted.
 
 
 ## Prerequisites
